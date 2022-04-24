@@ -1,1 +1,1 @@
-const btn=document.querySelector(".btn").addEventListener("click",(()=>{console.log(!0)}));
+const phoneMenu=document.querySelector(".nav-links-login"),btn=document.querySelector(".ham-menu").addEventListener("click",(()=>{phoneMenu.classList.toggle("active")}));

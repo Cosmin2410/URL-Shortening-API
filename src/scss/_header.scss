@@ -1,0 +1,49 @@
+nav {
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 7%;
+  }
+
+  .nav-links-login {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .nav-links {
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-left: 2rem;
+      }
+    }
+
+    .account {
+      margin-left: auto;
+      display: flex;
+      margin-right: 7%;
+
+      .login {
+        background-color: white;
+        color: $text-color;
+        margin-right: 1.5rem;
+        font-size: 1.5rem;
+      }
+
+      .signup {
+        width: 7rem;
+        font-size: 1.5rem;
+        height: 1.8rem;
+        border-radius: 20px;
+      }
+    }
+  }
+  .ham-menu {
+    display: none;
+  }
+}

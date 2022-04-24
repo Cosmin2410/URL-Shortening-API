@@ -1,0 +1,76 @@
+// Header
+@media (max-width: 56.25em) {
+  nav {
+    justify-content: space-between;
+    .nav-links-login {
+      background-color: hsl(257, 30%, 14%);
+      position: fixed;
+      max-width: 20rem;
+      height: 20rem;
+      flex-direction: column;
+      top: 6rem;
+      left: 50%;
+      transform: translate(-50%, 0);
+      padding: 1rem;
+      border-radius: 10px;
+
+      //   display: none;
+      .nav-links {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        ul {
+          flex-direction: column;
+          padding-bottom: 0.5rem;
+          border-bottom: 1px solid white;
+          width: 70%;
+          margin: 0 auto;
+          li {
+            margin-bottom: 1.3rem;
+
+            a {
+              color: white;
+            }
+          }
+        }
+      }
+
+      .account {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 100%;
+        padding-top: 0.5rem;
+        gap: 1rem;
+
+        .login {
+          background-color: transparent;
+          color: white;
+        }
+
+        .signup {
+          width: 13rem;
+          height: 2.2rem;
+        }
+      }
+    }
+    .ham-menu {
+      display: block;
+      margin-right: 7%;
+      cursor: pointer;
+    }
+
+    .active {
+      display: none;
+    }
+  }
+}
+
+// Wrapper
+@media (max-width: 62.5em) {
+  .wrapper {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}

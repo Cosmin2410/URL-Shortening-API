@@ -1,16 +1,17 @@
-body {
-  background-color: aqua;
-}
-
-div {
-  background-color: black;
-  font-size: 2rem;
+@import 'colors';
+@import 'util';
+* {
   box-sizing: border-box;
-  transform: rotate(45deg);
-
-  button {
-    background-color: black;
-    font-size: 2rem;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: $text-color;
+}
+
+@import 'header';
+
+@import 'wrapper';
+@import 'phone';
