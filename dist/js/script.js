@@ -1,1 +1,1 @@
-const phoneMenu=document.querySelector(".nav-links-login"),btn=document.querySelector(".ham-menu").addEventListener("click",(()=>{phoneMenu.classList.toggle("active")}));
+const phoneMenu=document.querySelector(".nav-links-login"),btn=document.querySelector(".ham-menu").addEventListener("click",(()=>{phoneMenu.classList.toggle("active")})),shortURL=async()=>{const e=await fetch("https://api.shrtco.de/v2/");await e.json()};
