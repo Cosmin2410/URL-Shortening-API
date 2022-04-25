@@ -1,0 +1,19 @@
+.btn-page {
+  background-color: $title-color;
+  padding: 3rem;
+  text-align: center;
+  background-image: url('../images/bg-shorten-desktop.svg');
+
+  h2 {
+    color: white;
+    font-size: 2.5rem;
+  }
+
+  button {
+    width: 7rem;
+    height: 2rem;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    margin-top: 2rem;
+  }
+}

@@ -74,3 +74,42 @@
     text-align: center;
   }
 }
+
+// Statistics
+
+@media (max-width: 66.625em) {
+  .statistics {
+    .statistics-box {
+      flex-direction: column;
+
+      .box {
+        gap: 0;
+      }
+
+      div:nth-child(2) {
+        margin-top: 0rem;
+      }
+
+      div:nth-child(2)::before {
+        content: '';
+        transform: rotate(90deg);
+        left: 9rem;
+        top: -1.3rem;
+      }
+
+      div:nth-child(3) {
+        margin-top: 0;
+
+        .box-image {
+          padding: 0.5rem;
+        }
+      }
+
+      div:nth-child(3)::before {
+        transform: rotate(90deg);
+        left: 9rem;
+        top: -1.3rem;
+      }
+    }
+  }
+}
