@@ -1,0 +1,36 @@
+.url-form {
+  .form {
+    // display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $title-color;
+    padding: 3rem;
+    background-image: url('../images/bg-boost-desktop.svg');
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    height: 8rem;
+
+    input {
+      width: 20rem;
+      height: 2.5rem;
+      border-radius: 10px;
+      border: none;
+      padding: 1rem;
+    }
+
+    button {
+      width: 6rem;
+      height: 2.5rem;
+      margin-left: 1rem;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+
+    .err {
+      color: red;
+      margin-top: 1rem;
+      display: none;
+    }
+  }
+}
