@@ -34,10 +34,23 @@ const inputBtn = document
       const data = await response.json();
       const url = data.result.short_link3;
 
-      urlsRow.innerHTML += ` <div> <p> ${inputText} </p>   <p> ${url} </p> 
-      
-      <button> Copy Link <button>
-      </div>  `;
+      urlsRow.innerHTML += ` <div class="url-row">
+          <p> ${inputText} </p>  
+          <input type="text" class="short-url" value="${url}" readonly>
+          </div>`;
+
+      btnLink();
     };
+
     shortURL();
   });
+
+const btnLink = () => {
+  const links = document.querySelectorAll('.short-url');
+  links.forEach((link) => {
+    link.addEventListener('click', () => {
+      let copyText = link.value;
+      navigator.clipboard.writeText(copyText);
+    });
+  });
+};

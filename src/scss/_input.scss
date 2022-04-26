@@ -1,12 +1,15 @@
 .url-form {
+  background-color: rgb(204, 204, 204);
+  padding: 1rem;
+
   .form {
-    // display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: $title-color;
     padding: 3rem;
     background-image: url('../images/bg-boost-desktop.svg');
-    width: 90%;
+    max-width: 50rem;
     margin: 0 auto;
     border-radius: 10px;
     height: 8rem;
@@ -20,7 +23,7 @@
     }
 
     button {
-      width: 6rem;
+      width: 9rem;
       height: 2.5rem;
       margin-left: 1rem;
       border-radius: 10px;
@@ -31,6 +34,64 @@
       color: red;
       margin-top: 1rem;
       display: none;
+    }
+  }
+}
+
+.urls {
+  .url-row {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border-radius: 5px;
+    position: relative;
+
+    p {
+      margin-right: auto;
+    }
+
+    p::before {
+      content: 'Copy Link';
+      width: 5rem;
+      height: 2rem;
+      position: absolute;
+      right: 0.5rem;
+      top: 0.6rem;
+      color: white;
+      background-color: $cyan;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+    }
+
+    .short-url {
+      all: unset;
+      color: $cyan;
+      cursor: pointer;
+      width: 100%;
+      text-align: end;
+      position: relative;
+      z-index: 2;
+      padding-right: 5rem;
+    }
+  }
+}
+
+@media (max-width: 37.5em) {
+  .url-form {
+    .form {
+      flex-direction: column;
+
+      input {
+        width: 15rem;
+        margin-bottom: 2rem;
+      }
     }
   }
 }
