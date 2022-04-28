@@ -14,7 +14,6 @@
       padding: 1rem;
       border-radius: 10px;
 
-      //   display: none;
       .nav-links {
         flex-direction: column;
         justify-content: center;
@@ -22,12 +21,11 @@
         ul {
           flex-direction: column;
           padding-bottom: 0.5rem;
-          border-bottom: 1px solid white;
-          width: 70%;
-          margin: 0 auto;
+          border-bottom: 1px solid rgb(201, 201, 201);
+          text-align: center;
+          margin-left: 0;
           li {
             margin-bottom: 1.3rem;
-
             a {
               color: white;
             }
@@ -56,7 +54,9 @@
       }
     }
     .ham-menu {
-      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin-right: 7%;
       cursor: pointer;
     }

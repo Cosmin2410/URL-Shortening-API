@@ -1,3 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: $text-color;
+  font-family: 'Poppins', sans-serif;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -13,6 +25,8 @@ nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    position: relative;
+    z-index: 3;
 
     .nav-links {
       ul {
@@ -20,26 +34,44 @@ nav {
         align-items: center;
         gap: 1rem;
         margin-left: 2rem;
+
+        a {
+          font-size: 1.1rem;
+        }
+
+        a:hover {
+          color: black;
+        }
       }
     }
 
     .account {
       margin-left: auto;
       display: flex;
+      justify-content: center;
+      align-items: center;
       margin-right: 7%;
 
       .login {
-        background-color: white;
+        background-color: transparent;
         color: $text-color;
         margin-right: 1.5rem;
-        font-size: 1.5rem;
+        font-size: 1.1rem;
+      }
+
+      .login:hover {
+        color: black;
       }
 
       .signup {
-        width: 7rem;
-        font-size: 1.5rem;
-        height: 1.8rem;
+        width: 6rem;
+        height: 2rem;
+        font-size: 1.1rem;
         border-radius: 20px;
+      }
+
+      .signup:hover {
+        background-color: lighten($cyan, 20%);
       }
     }
   }
