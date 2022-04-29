@@ -1,10 +1,12 @@
 .url-form {
-  background-color: rgb(204, 204, 204);
+  background-color: hsl(225, 33.33%, 95.29%);
+
   padding: 1rem;
   .form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    text-align: center;
     background-color: $title-color;
     padding: 3rem;
     background-image: url('../images/bg-boost-desktop.svg');
@@ -39,6 +41,8 @@
       color: red;
       margin-top: 1rem;
       display: none;
+      text-align: start;
+      margin-left: 7rem;
     }
   }
 }

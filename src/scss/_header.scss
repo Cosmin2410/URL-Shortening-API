@@ -12,11 +12,13 @@ body {
 
 nav {
   display: flex;
+  justify-content: center;
   align-items: center;
   padding-top: 2rem;
 
   .logo {
     display: flex;
+    justify-content: center;
     align-items: center;
     margin-left: 7%;
   }
@@ -24,6 +26,7 @@ nav {
   .nav-links-login {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     position: relative;
     z-index: 3;
@@ -31,16 +34,18 @@ nav {
     .nav-links {
       ul {
         display: flex;
+        justify-content: center;
         align-items: center;
         gap: 1rem;
         margin-left: 2rem;
 
         a {
           font-size: 1.1rem;
+          font-weight: 600;
         }
 
         a:hover {
-          color: black;
+          color: $title-color;
         }
       }
     }
@@ -57,10 +62,10 @@ nav {
         color: $text-color;
         margin-right: 1.5rem;
         font-size: 1.1rem;
+        font-weight: 600;
       }
-
       .login:hover {
-        color: black;
+        color: $title-color;
       }
 
       .signup {
@@ -68,6 +73,7 @@ nav {
         height: 2rem;
         font-size: 1.1rem;
         border-radius: 20px;
+        font-weight: 600;
       }
 
       .signup:hover {

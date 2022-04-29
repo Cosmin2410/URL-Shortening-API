@@ -1,56 +1,67 @@
 .statistics {
-  background-color: rgb(204, 204, 204);
-  padding: 5rem 0;
-  h2 {
-    text-align: center;
-    font-size: clamp(1.5rem, 2.4rem, 5rem);
-  }
+  background-color: hsl(225, 33.33%, 95.29%);
+  padding: 5rem 1rem;
 
-  p {
-    text-align: center;
-    font-size: 1.5rem;
+  .statistics-title {
+    max-width: 35rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    h2 {
+      color: $title-color;
+      text-align: center;
+      font-size: 2.5rem;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.2rem;
+    }
   }
 
   .statistics-box {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 2rem;
 
     .box {
-      width: 20rem;
+      max-width: 24rem;
       background-color: white;
-      margin-top: 5rem;
+      margin-top: 1rem;
       border-radius: 5px;
-      padding: 1rem;
+      padding: 2rem;
       position: relative;
 
       h3 {
         color: $title-color;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+        margin-bottom: 0.3rem;
       }
 
       p {
         color: $text-color;
         text-align: start;
-        font-size: 1.3rem;
+        font-size: 1rem;
       }
 
       .box-image {
         background-color: $title-color;
-        display: inline-block;
-        padding: 0.9rem;
+        width: 5.5rem;
+        height: 5.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border-radius: 50%;
-        margin-top: -5rem;
-        margin-bottom: 1rem;
+        margin: -4.6rem 0 1rem 1.5rem;
+
+        img {
+          width: 3rem;
+        }
       }
     }
 
-    // div:first-child::before {
-    // }
-
     div:nth-child(2) {
-      margin-top: 10rem;
+      margin-top: 4rem;
     }
 
     div:nth-child(2)::before {
@@ -61,11 +72,11 @@
       height: 0.6rem;
       background-color: $cyan;
       left: -2rem;
-      top: 4rem;
+      top: 7rem;
     }
 
     div:nth-child(3) {
-      margin-top: 20rem;
+      margin-top: 8rem;
     }
 
     div:nth-child(3)::before {
@@ -76,7 +87,7 @@
       height: 0.6rem;
       background-color: $cyan;
       left: -2rem;
-      top: 4rem;
+      top: 3rem;
     }
   }
 }
