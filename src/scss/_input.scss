@@ -1,7 +1,6 @@
 .url-form {
   background-color: rgb(204, 204, 204);
   padding: 1rem;
-
   .form {
     display: flex;
     justify-content: center;
@@ -13,6 +12,7 @@
     margin: 0 auto;
     border-radius: 10px;
     height: 8rem;
+    margin-top: -4.9rem;
 
     input {
       width: 20rem;
@@ -20,6 +20,11 @@
       border-radius: 10px;
       border: none;
       padding: 1rem;
+    }
+
+    input:focus {
+      outline: none;
+      outline: 1px solid black;
     }
 
     button {
