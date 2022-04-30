@@ -6,12 +6,30 @@
   padding: 3rem 0;
 
   .logo-footer {
-    margin-right: 5rem;
+    margin-right: 7rem;
+    img {
+      filter: brightness(0) invert(1);
+    }
   }
 
   .nav-footer {
     display: grid;
     grid-template-columns: repeat(3, 10rem);
+
+    .row {
+      margin-right: 2rem;
+      h3 {
+        margin-bottom: 1.5rem;
+      }
+
+      a {
+        font-size: 1.2rem;
+      }
+
+      a:hover {
+        color: $cyan;
+      }
+    }
   }
 
   .social-footer {
@@ -21,6 +39,12 @@
     img {
       width: 2rem;
       height: 2rem;
+      cursor: pointer;
+    }
+
+    img:hover {
+      filter: invert(0%) sepia(96%) saturate(1693%) hue-rotate(128deg)
+        brightness(85%) contrast(90%);
     }
   }
 }
@@ -40,8 +64,11 @@
       grid-template-columns: 10rem;
       justify-content: center;
 
-      h3 {
-        margin-top: 2rem;
+      .row {
+        margin-right: 0;
+        h3 {
+          margin-top: 2rem;
+        }
       }
     }
 

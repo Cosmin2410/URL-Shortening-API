@@ -2,7 +2,10 @@
   background-color: $title-color;
   padding: 3rem;
   text-align: center;
-  background-image: url('../images/bg-shorten-desktop.svg');
+  background-image: url('../images/bg-boost-desktop.svg');
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: right;
 
   h2 {
     color: white;
@@ -10,9 +13,9 @@
   }
 
   button {
-    width: 7rem;
-    height: 2rem;
-    font-size: 1.1rem;
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1.3rem;
     border-radius: 20px;
     margin-top: 2rem;
   }
